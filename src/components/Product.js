@@ -6,7 +6,7 @@ import { PropTypes } from "prop-types";
 
 export default class Product extends Component {
   render() {
-    const { id, title, img, price, inCart } = this.props.product;
+    const { id, title, images, price, inCart } = this.props.product;
     return (
       <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
         <div className="card">
@@ -17,7 +17,7 @@ export default class Product extends Component {
             }}
           >
             <Link to="/details">
-              <img src={img} alt="product" className="card-img-top" />
+              <img src={images} alt="product" className="card-img-top" />
             </Link>
             <button
               className="cart-btn"
@@ -53,7 +53,7 @@ export default class Product extends Component {
 Product.propTypes = {
   product: PropTypes.shape({
     id: PropTypes.number,
-    img: PropTypes.string,
+    image: PropTypes.string,
     title: PropTypes.string,
     price: PropTypes.number,
     inCart: PropTypes.bool

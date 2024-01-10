@@ -11,7 +11,7 @@ export default class ProductList extends Component {
         {/* <Product /> */}
         <div className="py-5">
           <div className="container">
-            <Title name="our" title="products" />
+            {/* <Title name="our" title="products" /> */}
             <div className="row">
               <ProductConsumer>
                 {value => {
