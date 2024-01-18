@@ -16,13 +16,13 @@ export default class Navbar extends Component {
     <Link to="/list" className="nav-link text-dark mr-3" style={{ fontSize: '1.2rem' }}>
       Products
     </Link>
-    <Link to="/login" className="nav-link text-dark mr-3" style={{ fontSize: '1.2rem' }}>
+    <Link to="/list" className="nav-link text-dark mr-3" style={{ fontSize: '1.2rem' }}>
       Sneakers
     </Link>
-    <Link to="/login" className="nav-link text-dark mr-3" style={{ fontSize: '1.2rem' }}>
+    <Link to="/list" className="nav-link text-dark mr-3" style={{ fontSize: '1.2rem' }}>
     New Arrivals
     </Link>
-    <Link to="/login" className="nav-link text-dark mr-3" style={{ fontSize: '1.2rem' }}>
+    <Link to="/list" className="nav-link text-dark mr-3" style={{ fontSize: '1.2rem' }}>
       Explore
     </Link>
     <Link to="/login" className="nav-link text-dark mr-3" style={{ fontSize: '1.2rem' }}>

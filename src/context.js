@@ -1,11 +1,8 @@
 import React, { Component } from "react";
+import { storeProducts, detailProduct } from "./data";
 
 const ProductContext = React.createContext();
-
-// Define a placeholder detailProduct
-const detailProduct = {
-  // Add properties for your placeholder product
-};
+// ... (other imports and code)
 
 class ProductProvider extends Component {
   state = {
@@ -32,12 +29,28 @@ class ProductProvider extends Component {
       });
   };
 
-  handleDetail = () => {
-    console.log("hello from detail");
+  fetchDetailProduct = (id) => {
+    // Fetch detail product from the API based on the provided id
+    fetch(`https://api.escuelajs.co/api/v1/products/${id}`)
+      .then(response => response.json())
+      .then(data => {
+        // Update state with the fetched detail product
+        this.setState({
+          detailProduct: data
+        });
+      })
+      .catch(error => {
+        console.error(`Error fetching detail product with id ${id}:`, error);
+      });
   };
 
-  addToCart = id => {
-    console.log(`hello from add to cart is ${id} `);
+  handleDetail = (id) => {
+    // Fetch and set the detail product based on the provided id
+    this.fetchDetailProduct(id);
+  };
+
+  addToCart = (id) => {
+    console.log(`hello from add to cart is ${id}`);
   };
 
   render() {
@@ -54,6 +67,9 @@ class ProductProvider extends Component {
     );
   }
 }
+
+// ... (other exports)
+
 
 const ProductConsumer = ProductContext.Consumer;
 

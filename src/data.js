@@ -104,12 +104,12 @@ export const storeProducts = [
 
 export const detailProduct = {
   id: 1,
-  title: "Google Pixel - Black",
-  img: "img/product-1.png",
+  title: "Classic Grey Hooded Sweatshirt",
+  img: "https://i.imgur.com/R2PN9Wq.jpeg",
   price: 10,
-  company: "google",
+  // company: "google",
   info:
-    "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+    "Elevate your casual wear with our Classic Grey Hooded Sweatshirt. Made from a soft cotton blend, this hoodie features a front kangaroo pocket, an adjustable drawstring hood, and ribbed cuffs for a snug fit. Perfect for those chilly evenings or lazy weekends, it pairs effortlessly with your favorite jeans or joggers.",
   inCart: false,
   count: 0,
   total: 0
